@@ -1,8 +1,8 @@
 ﻿class Program
 {
-    static List<Vehiculo> autos = new List<Vehiculo>();
-    static List<Vehiculo> motos = new List<Vehiculo>();
-    static List<Vehiculo> camiones = new List<Vehiculo>();
+    static List<Auto> autos = new List<Auto>();
+    static List<Moto> motos = new List<Moto>();
+    static List<Camion> camiones = new List<Camion>();
 
     static void Main()
     {

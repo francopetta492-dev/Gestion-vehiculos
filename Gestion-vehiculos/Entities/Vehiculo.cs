@@ -6,8 +6,8 @@ public abstract class Vehiculo
     private string marca;
     private double velocidadActual;
 
-    public string Marca{get {return this.marca;} set{value = this.marca;}}
-    public double VelocidadActual{get{return this.velocidadActual;} set{value = this.velocidadActual;}}
+    public string Marca{get {return this.marca;} set{this.marca = value;}}
+    public double VelocidadActual{get{return this.velocidadActual;} set{this.velocidadActual = value;}}
 
     public Vehiculo(string marca, double velocidadActual)
     {
