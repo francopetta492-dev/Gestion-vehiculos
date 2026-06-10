@@ -1,6 +1,6 @@
 public class Auto : Vehiculo
 {
-    public Auto(string marca, double velocidadActual) : base (marca, velocidadActual)
+    public Auto(string marca, double velocidadActual) : base(marca, velocidadActual)
     {
         
     }

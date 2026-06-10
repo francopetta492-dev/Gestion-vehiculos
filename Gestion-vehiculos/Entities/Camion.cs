@@ -1,4 +1,4 @@
-class Camion : Vehiculo
+public class Camion : Vehiculo
 {
     public Camion(string marca, double velocidadActual) : base(marca, velocidadActual)
     {  

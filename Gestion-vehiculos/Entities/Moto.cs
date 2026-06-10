@@ -1,4 +1,4 @@
-class Moto : Vehiculo
+public class Moto : Vehiculo
 {
     public Moto(string marca, double velocidadActual) : base(marca, velocidadActual)
     {  

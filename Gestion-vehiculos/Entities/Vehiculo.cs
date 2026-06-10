@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Dynamic;
 
-abstract class Vehiculo
+public abstract class Vehiculo
 {
     private string marca;
     private double velocidadActual;
