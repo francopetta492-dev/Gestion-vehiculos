@@ -76,6 +76,22 @@
         camiones.Add(new Camion(marca, velocidad));
     }
 
+    static void Acelerar()
+    {
+        Console.WriteLine("Acelerado...");
+        foreach (var auto in autos)
+        {
+            auto.Acelerar();
+        }
+        foreach (var moto in motos)
+        {
+            moto.Acelerar();
+        }
+        foreach (var camion in camiones)
+        {
+            camion.Acelerar();
+        }
+    }
     static void Frenar()
     {
         Console.WriteLine("Frenando...");
