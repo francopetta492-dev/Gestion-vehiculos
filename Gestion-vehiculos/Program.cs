@@ -1,5 +1,9 @@
 ﻿class Program
 {
+    static List<Vehiculo> autos = new List<Vehiculo>();
+    static List<Vehiculo> moto = new List<Vehiculo>();
+    static List<Vehiculo> camion = new List<Vehiculo>();
+
     static void Main()
     {
         int op;
@@ -25,5 +29,38 @@
                     break;
             }
         }while(op != 0);
+    }
+
+    static void CargarAuto()
+    {
+        Console.Write("Ingresar Marca: ");
+        string marca = Console.ReadLine();
+
+        Console.Write("Ingrese la velocidad :");
+        double velocidad = double.Parse(Console.ReadLine());
+
+        autos.Add(new Auto(marca, velocidad));
+    }
+
+    static void CargarMoto()
+    {
+        Console.Write("Ingresar Marca: ");
+        string marca = Console.ReadLine();
+
+        Console.Write("Ingrese la velocidad :");
+        double velocidad = double.Parse(Console.ReadLine());
+
+        motos.Add(new Moto(marca, velocidad));
+    }
+
+    static void CargarCamion()
+    {
+        Console.Write("Ingresar Marca: ");
+        string marca = Console.ReadLine();
+
+        Console.Write("Ingrese la velocidad :");
+        double velocidad = double.Parse(Console.ReadLine());
+
+        camiones.Add(new Camion(marca, velocidad));
     }
 }
