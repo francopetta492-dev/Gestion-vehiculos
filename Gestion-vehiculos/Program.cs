@@ -15,6 +15,7 @@
             Console.WriteLine("3. Agregar camion");
             Console.WriteLine("4. Acelerar");
             Console.WriteLine("5. Frenar");
+            Console.WriteLine("6. Mostrar vehículos");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             op = int.Parse(Console.ReadLine());
@@ -35,6 +36,12 @@
                     break;
                 case 5:
                     Frenar();
+                    break;
+                case 6:
+                    MostrarInfo();
+                    break;
+                case 0:
+                    Console.WriteLine("Saliendo...");
                     break;
                 default:
                     Console.WriteLine("Opción no válida");
@@ -106,6 +113,35 @@
         foreach (var camion in camiones)
         {
             camion.Frenar();
+        }
+    }
+
+    static void MostrarInfo()
+    {
+        Console.WriteLine("--SISTEM DE GESTION DE VEHICULOS--");
+        
+        Console.WriteLine("=======================================");
+        
+        Console.WriteLine("Autos:");
+        foreach (var auto in autos)
+        {
+            Console.WriteLine($"Marca: {auto.Marca}, Velocidad Actual: {auto.VelocidadActual}");
+        }
+
+        Console.WriteLine("=======================================");
+        
+        Console.WriteLine("Motos:");
+        foreach (var moto in motos)
+        {
+            Console.WriteLine($"Marca: {moto.Marca}, Velocidad Actual: {moto.VelocidadActual}");
+        }
+
+        Console.WriteLine("=======================================");
+
+        Console.WriteLine("Camiones:");
+        foreach (var camion in camiones)
+        {
+            Console.WriteLine($"Marca: {camion.Marca}, Velocidad Actual: {camion.VelocidadActual}");
         }
     }
 }
