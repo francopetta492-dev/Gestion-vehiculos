@@ -8,10 +8,12 @@ public class Auto : Vehiculo
     public override void Acelerar()
     {
         double aceleracion = VelocidadActual + 35;
+        VelocidadActual = aceleracion;
     }
 
     public override void Frenar()
     {
         double frenada = VelocidadActual - 20;
+        VelocidadActual = frenada;
     }
 }
